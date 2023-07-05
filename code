@@ -1,0 +1,60 @@
+import java.util.*;
+
+interface Debitable{
+	public void withdraw();	
+}
+
+class BankAccount{
+	int accountNo;
+	int aadharNo;
+	String ownerName;
+	double roi;
+	double balance;
+	
+	BankAccount(int ac,int add,String oName,double roi,double b){
+		this.openAccount(ac);
+		this.aadharNo = add;
+		this.ownerName = oName;
+		this.roi = roi;
+		this.balance = balance;
+	}
+	
+	void openAccount(int ac){
+		this.accountNo = ac;
+	}
+	void deposit(double amt){
+		this.balance = this.balance + amt;
+	}
+	void closeAccount(){
+		super.balance = super.balance - (super.balance*(5/100));
+	}
+	void updateInterest(){
+		
+	}
+}
+
+class FixedDepositAccount{
+	int lockInPeriod;
+	
+	void updateInterest(){
+		
+	}
+}
+
+class SavingAccount extends  BankAccount,implements Debitable{
+	
+	public void withdraw(){
+	
+	}
+}	
+	
+class Main{
+	public static void main(String[] args){
+		String accType;
+		System.out.print("Enter which Type of Account you want to create: ");
+   
+   
+   
+
+	}
+}
