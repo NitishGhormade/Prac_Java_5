@@ -50,9 +50,17 @@ class SavingAccount extends  BankAccount,implements Debitable{
 	
 class Main{
 	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
 		String accType;
 		System.out.print("Enter which Type of Account you want to create: ");
-   
+   		accType = sc.next();
+   		
+   		if(accType.equals("Fixed Account")){
+   			
+   		} 
+   		else{
+   		
+   		}
    
    
 
